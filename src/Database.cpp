@@ -8,6 +8,11 @@ Database::Database(const std::string name)
 
 Database::~Database() {}
 
+std::string Database::getName() const
+{
+    return this->name;
+}
+
 void Database::addTable(const Table& table)
 {
     this->tables.push_back(table);

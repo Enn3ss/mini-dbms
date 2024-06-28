@@ -11,6 +11,7 @@ class Database
     Database(const std::string name);
     ~Database();
 
+    std::string getName() const;
     void addTable(const Table& table);
     void removeTable(const std::string& tableName);
     Table* getTable(const std::string& tableName);
